@@ -18,4 +18,3 @@ def scrabble_score(st):
             k += 10
     return k
 
-scrabble_score(' a')
