@@ -6,4 +6,5 @@ def consecutive(arr, a, b):
         else:
             return False
 
-consecutive(arr,3,1)
+
+consecutive(arr, 3, 1)
