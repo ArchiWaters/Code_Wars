@@ -5,9 +5,7 @@
 # If the input is an empty array or is null, return an empty array.
 
 def count_positives_sum_negatives(arr):
-    val = [];
-    k_pos = 0;
-    sum_neg = 0
+    val = []; k_pos = 0; sum_neg = 0;
     if len(arr) > 0:
         for num in arr:
             if num > 0:
