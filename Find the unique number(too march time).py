@@ -1,15 +1,14 @@
 def find_uniq(arr):
-    max_list = []; min_list = []
+    max_val = max(arr); min_val = min(arr); k = 0
     for num in arr:
-        if num == max(arr):
-            max_list.append(num)
-        elif num == min(arr):
-            min_list.append(num)
-    if len(max_list) == 1:
-        print(max_list[0])
-        return max_list[0]
+        if num == min_val:
+            k += 1
+    if k > 1:
+        print(max_val)
+        return max_val
     else:
-        print(min_list[0])
-        return min_list[0]
+        print(min_val)
+        return  min_val
 
-find_uniq([ 3, 10, 3, 3, 3 ])
+
+find_uniq([ 3, 2, 3, 3, 3 ])
