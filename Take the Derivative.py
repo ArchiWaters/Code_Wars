@@ -12,5 +12,7 @@
 #The exponent will never be 1, and neither number will ever be 0
 
 def derive(coefficient, exponent):
-    # your code here
-    pass
+    value = '{}x^{}'.format(coefficient * exponent, exponent - 1)
+    return value
+
+derive(7,8)
