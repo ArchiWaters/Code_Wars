@@ -6,5 +6,11 @@
 #In the example above, the output would be 8.
 
 def collatz(n):
-    c_c = []; c_c.append(n);
+    c_c = [];
+    c_c.append(n);
     if n // 2 == 0:
+        n = n / 2
+        c_c.append(n)
+    print(c_c)
+
+collatz(20)

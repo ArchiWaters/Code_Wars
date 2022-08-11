@@ -5,4 +5,9 @@
 #'aabacbaa' --> 'bbabcabb'
 
 def switcheroo(s):
-    #your code here
+    for num in s:
+        if num == 'a':
+            s = s.replace('a','b')
+    print(s)
+
+switcheroo('acb')
